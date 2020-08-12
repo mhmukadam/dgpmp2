@@ -1,0 +1,32 @@
+gpmp2:
+  planner_params:
+    dof: 2
+    state_dim: 4
+    total_time_sec: 10
+    total_time_step: 100
+    use_vel_limits: False
+    use_dyn_constraint: False
+  gp_params:
+    Q_c_inv: [[1.0, 0.0], [0.0, 1.0]]
+    K_s: 0.01
+    K_g: 0.01
+    K_v: 0.01
+    v_x: 1.0
+    v_y: 1.0
+  obs_params:
+    cost_sigma: 0.01
+    epsilon_dist: 0.4
+  optim_params:
+    method: 'gauss_newton'
+    reg: 0.1
+    plan_time: 'inf'
+    max_iters: 100
+    tol_err: 0.001
+    tol_delta: 0.0001
+
+rrtstar:
+    planner_params:
+        plan_time: 2
+    obs_params:
+        epsilon_dist: 0.2
+    

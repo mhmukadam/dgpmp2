@@ -1,0 +1,5 @@
+type: 'point_robot'
+dof: 2
+sphere_radius: [0.4]
+xs: [0.0]
+ys: [0.0]

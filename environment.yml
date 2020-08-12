@@ -1,0 +1,23 @@
+name: diff_gpmp2
+channels:
+  - conda-forge
+dependencies:
+  - numpy==1.17.2
+  - pytest
+  - colorlog
+  - pandas
+  - tabulate
+  - pip
+  - pytorch
+  - torchvision
+  - pip:
+    - click
+    - cloudpickle
+    - wheel
+    - scipy
+    - pyyaml
+    - matplotlib
+
+
+
+
